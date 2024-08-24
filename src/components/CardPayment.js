@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Payment, initMercadoPago } from '@mercadopago/sdk-react';
 
-const App = () => {
+const CardPayment = () => {
   const [preferenceId, setPreferenceId] = useState('');
 
   useEffect(() => {
@@ -36,7 +36,7 @@ const App = () => {
       {preferenceId ? (
         <Payment
           initialization={{
-            amount: 100.00,
+            amount: 1.00,
             preferenceId: preferenceId,
           }}
           customization={{
@@ -78,4 +78,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default CardPayment;
