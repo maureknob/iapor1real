@@ -1,6 +1,6 @@
 // src/components/Home.jsx
 import React from 'react';
-import { Box, Grid, Container, AppBar, Toolbar, Typography, Button } from '@mui/material';
+import { Box, Grid, Container, Typography, Button } from '@mui/material';
 import logo from '../assets/logo.png';
 import scientist from '../assets/iaporumreal.png';
 import { useNavigate } from 'react-router-dom'
